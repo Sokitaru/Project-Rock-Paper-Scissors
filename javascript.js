@@ -30,3 +30,36 @@ function getComputerChoice() {
 }
     console.log(getComputerChoice())
 
+//Algorithm
+// Create new function called getHumanChoice
+// return one of the choices depending on what the user enters
+// use the prompt function
+// test with console.log
+
+// Psuedocode
+// FUNCTION getHumanChoice()
+// LET userChoice = prompt('rock, paper, or scissors')
+// IF userChoice = 'rock'
+//    return 'rock'
+// IF userChoice = 'paper'
+//    return 'paper'
+// IF userChoice = 'scissors'
+//    return 'scissors'
+// console.log getHumanChoice
+
+//code
+
+function getHumanChoice() {
+    let userChoice = prompt('rock, paper, or scissor')
+    if (userChoice === 'rock') {
+        return 'scissor'
+    }
+    else if (userChoice === 'paper') {
+        return 'rock'
+    }
+    else if (userChoice === 'scissor') {
+        return 'paper'
+    }
+}
+
+console.log(getHumanChoice())
